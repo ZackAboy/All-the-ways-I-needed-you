@@ -68,6 +68,12 @@ public class YarnSceneLoader : MonoBehaviour
     private IEnumerator LoadSceneAndStartNode(string sceneName, string startNode)
     {
         var op = SceneManager.LoadSceneAsync(sceneName);
+        if (op == null)
+        {
+            Debug.LogError($"YarnSceneLoader: Scene '{sceneName}' can't be loaded. Is it added to Build Settings or Addressables?");
+            yield break;
+        }
+
         while (!op.isDone)
         {
             yield return null;

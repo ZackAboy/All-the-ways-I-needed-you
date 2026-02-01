@@ -20,16 +20,16 @@ Sylvia: I have a crush on you.
 Sylvia: But I don't want you to feel overwhelmed.
 
 -> Really?
--> I have a feeling for you too, but things are moving too fast.
+-> I have a feelings for you too, but things are moving too fast.
 -> I'm not ready for another relationship.
     <<set $simp += 1>>
 
 Sylvia: I think we get along pretty well.
 Sylvia: Can we try to be together?
 
--> We only know each other for 2 weeks.
+-> We have only known each other for 2 weeks.
 
-Sylvia: I can help you with your college application essay.
+Sylvia: I can help you with your college applications.
 Sylvia: I know how hard you're trying to get into USC, 
 Sylvia: and I've been through the whole process. 
 Sylvia: I know how tough it is, so let me help you.
@@ -40,6 +40,121 @@ Sylvia: I know how tough it is, so let me help you.
     <<jump Level3_Blake_Start>>
 
 <<hide_character "Sylvia">>
-<<jump Sylvia_LongDistance>>
+<<load_scene "PhoneChatLevelTwo" "Sylvia_LongDistance">>
+<<stop>>
+
+===
+
+title: Sylvia_LongDistance
+---
+
+Narration: <i>After four months.</i>
+Narration: <i>We are in a long-distance relationship.</i>
+
+Sylvia: Babe, I went to Iceland with my friends!
+Sylvia: We saw the Nothern Lights.
+Sylvia: We should come together.
+
+-> Are you able to check my Personal Statement?
+    You: Are you able to check my Personal Statement?
+    <<set $arbiter += 5>>
+    <<jump Sylvia_Essay>>
+-> Wow, it's so pretty.
+    You: Wow, it's so pretty.
+    <<jump Sylvia_Aurora>>
+
+===
+title: Sylvia_Aurora
+---
+
+Sylvia: Yeah I know right?
+Sylvia: It's my first time seeing the Nothern Lights.
+
+-> Are you able to check my Personal Statement?
+    You: Are you able to check my Personal Statement?
+    <<set $arbiter += 3>>
+    <<jump Sylvia_Essay>>
+-> I'm struggling with my Personal Statement right now.
+    You: I'm struggling with my Personal Statement right now.
+    <<set $arbiter += 1>>
+    <<jump Sylvia_Essay>>
+
+===
+
+title: Sylvia_Essay
+---
+
+Sylvia: Babe... I have an essay due within three days.
+
+-> Shouldn't have gone on a trip and prioritized your work
+    You: Shouldn't have gone on a trip and prioritized your work
+    <<set $arbiter += 3>>
+-> But I need to submit it tomorrow. Could you please help me with it?
+    You: But I need to submit it tomorrow. Could you please help me with it?
+    <<set $arbiter += 1>>
+
+Sylvia: You're such a bummer.
+Sylvia: I'll try to review it if I have time.
+
+-> Am I the bummer now? You promised this when we got together.
+    You: Am I the bummer now? You promised this when we got together.
+    <<set $arbiter += 3>>
+-> Thank you babe. I appreciate that.
+    You: Thank you babe. I appreciate that.
+
+<<jump Sylvia_Ghosting>>
+
+===
+
+title: Sylvia_Ghosting
+---
+Narration: <i>She sent her review and comment on my personal statement, but honestly I don't think it's really helpful.</i>
+Narration: <i>She's kinda brushing me off.</i>
+-> Hey.
+    You: Hey.
+-> I missed you.
+  <<set $simp += 1>>
+    You: I missed you.
+-> can we facetime?
+ <<set $simp += 1>>
+    You: can we facetime?
+
+Sylvia: I'm really busy with my final, it's stressing me out.
+Sylvia: I can't always be online these few days.
+-> But I'm also stressed out because of my application.
+    You: But I'm also stressed out because of my application.
+    <<set $arbiter += 1>>
+-> Ok I won't annoy you these few days.
+    You: Ok I won't annoy you these few days.
+-> Good luck for your final.
+    You: Good luck for your final.
+
+Narration: <i>She hasn't talked to me for two weeks.</i>
+Narration: <i>She doesn't reply to my messages.</i>
+Narration: <i>But she comments on other guy's Instagram posts.</i>
+Narration: <i>What the hell?</i>
+
+-> What do you mean?
+    You: What do you mean?
+-> you got the time to scroll your social media and comment on other guys but you don't have the time to talk with me?
+    You: you got the time to scroll your social media and comment on other guys but you don't have the time to talk with me?
+-> If this isn't working, THEN WE SHOULD BREAK UP.
+    <<set $arbiter += 3>>
+    You: If this isn't working, THEN WE SHOULD BREAK UP.
+
+Sylvia: Honestly maybe we should take a break.
+Sylvia: I don't feel the same way anymore.
+
+-> Wait what? Are you serious right now?
+    You: Wait what? Are you serious right now?
+-> You ghosted me for two weeks and now this?
+    You: You ghosted me for two weeks and now this?
+-> What the fuck is wrong with you?
+    You: What the fuck is wrong with you?
+
+Sylvia: I can't see a future between us.
+Sylvia: It's best we end here.
+
+<<jump Level3_Blake_Start>>
 
 ===

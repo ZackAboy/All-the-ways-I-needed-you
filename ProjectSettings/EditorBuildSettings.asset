@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelOne.unity
     guid: 0fb59e7c5d49fac478c34344b91494e0
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 4637ce4b9ddfb7543a9e7137067bc990
+  - enabled: 1
+    path: Assets/Scenes/PhoneChatLevelTwo.unity
+    guid: 0a56c0c6b3fc843409aa833136dbd056
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
