@@ -157,3 +157,10 @@ Annie: Maybe you should start focusing on your college application season.
 <<jump Sylvia_Intro>>
 
 ===
+
+title: Sylvia_Intro
+---
+<<hide_all_characters>>
+Annie: I'll text you her details later.
+<<stop>>
+===
