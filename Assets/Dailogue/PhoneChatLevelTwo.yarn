@@ -1,48 +1,3 @@
-﻿title: LevelTwoDia
----
-
-Sylvia: So you really love USC?
-Sylvia: I heard from Annie.
-Sylvia: Good luck with your high school senior year.
-
--> Thank you.
-
-Sylvia: Just text me if you have any questions or concerns!
-
-She shows a great interest in me somehow.
-We hung out several times.
-She gives me suggestions about college applications.
-We have the same music taste.
-She's a sweet girl.
-
-Sylvia: I've thought about telling you this lately.
-Sylvia: I have a crush on you.
-Sylvia: But I don't want you to feel overwhelmed.
-
--> Really?
--> I have a feeling for you too, but things are moving too fast.
--> I'm not ready for another relationship.
-    <<set $simp += 1>>
-
-Sylvia: I think we get along pretty well.
-Sylvia: Can we try to be together?
-
--> We only know each other for 2 weeks.
-
-Sylvia: I can help you with your college application essay.
-Sylvia: I know how hard you're trying to get into USC, 
-Sylvia: and I've been through the whole process. 
-Sylvia: I know how tough it is, so let me help you.
-
--> I also think we're a great match, so let's be together.
-    <<set $arbiter += 5>>
--> Thank you, but I'm not ready for another relationship.
-    <<jump Level3_Blake_Start>>
-
-<<jump Sylvia_LongDistance>>
-
-===
-
 title: Sylvia_LongDistance
 ---
 
@@ -102,11 +57,14 @@ She sent her review and comment on my personal statement, but honestly I don't t
 She's kinda brushing me off.
 -> Hey.
 -> I missed you.
+  <<set $simp += 1>>
 -> can we facetime?
- 
-Sylvia I'm really busy with my final, it's stressing me out.
-Sylvia I can't always be online these few days.
--> But I'm also stressed out because of my application. //+1 Arbiter
+ <<set $simp += 1>>
+
+Sylvia: I'm really busy with my final, it's stressing me out.
+Sylvia: I can't always be online these few days.
+-> But I'm also stressed out because of my application.
+    <<set $arbiter += 1>>
 -> Ok I won't annoy you these few days.
 -> Good luck for your final.
 
@@ -133,4 +91,3 @@ Sylvia: It's best we end here.
 <<jump Level3_Blake_Start>>
 
 ===
-
