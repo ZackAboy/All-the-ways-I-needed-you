@@ -1,0 +1,296 @@
+title: LevelThreeDia
+---
+<<jump Level3_Blake_Start>>
+===
+
+title: Level3_Blake_Start
+---
+<<declare $level3_entry = "">>
+Narration: <i>It's nearly the end of my application season.</i>
+Narration: <i>I should have never been with Sylvia.</i>
+Narration: <i>I don't even like her that much.</i>
+<<jump Kai_LateNight>>
+<<stop>>
+===
+
+title: LevelThree_Entry
+---
+<<if $level3_entry == "Meet_Blake">>
+    <<jump Meet_Blake>>
+<<else>>
+    <<jump Kai_LateNight_Dinner>>
+<<endif>>
+===
+
+title: Kai_LateNight
+---
+Kai: Hey.
+Kai: I went back.
+Kai: I know it's kinda late right now, but do you want to have some food together?
+
+-> ...okay?
+    You: ...okay?
+    <<set $simp += 2>>
+    <<jump Kai_Apology>>
+-> I don't want to see you anymore.
+    You: I don't want to see you anymore.
+    <<set $arbiter += 3>>
+    <<jump Load_Meet_Blake>>
+===
+
+title: Kai_Apology
+---
+Kai: I know I've hurt your feelings.
+Kai: I'm sorry. How can I make it up to you?
+
+-> I just broke up with my girlfriend.
+    You: I just broke up with my girlfriend.
+    <<jump Load_Kai_Dinner>>
+-> Shitty relationships always happen to me.
+    You: Shitty relationships always happen to me.
+    <<jump Load_Kai_Dinner>>
+===
+
+title: Load_Kai_Dinner
+---
+<<set $level3_entry = "Kai_LateNight_Dinner">>
+<<load_scene "LevelThree" "">>
+<<stop>>
+===
+
+title: Kai_LateNight_Dinner
+---
+<<set_background "Restaurant">>
+<<show_character "Kai">>
+Narration: <i>Having a late-night dinner together.</i>
+
+You: It's good to have someone to talk with.
+Kai: I'm always here.
+
+-> nah ur not...
+    You: nah ur not...
+    <<set $arbiter += 1>>
+-> I'm glad that she broke up with me.
+    You: I'm glad that she broke up with me.
+    <<set $simp += 3>>
+
+Kai: I got back with my ex.
+
+-> why are you telling me this...
+    You: why are you telling me this...
+    <<set $arbiter += 1>>
+-> oh ok. Good for you...
+    You: oh ok. Good for you...
+
+Kai: I guess we kinda met each other at the wrong time. But at least we're still friends.
+<<hide_character "Kai">>
+<<jump Meet_Blake>>
+===
+
+title: Load_Meet_Blake
+---
+<<set $level3_entry = "Meet_Blake">>
+<<load_scene "LevelThree" "">>
+<<stop>>
+===
+
+title: Meet_Blake
+---
+<<set_background "School">>
+<<show_character "Blake">>
+Narration: <i>After two months...</i>
+
+Blake: How's your college application going so far?
+
+-> nothing special.
+    You: nothing special.
+-> I'm waiting for the interview.
+    You: I'm waiting for the interview.
+
+Blake: Do you wanna hang out after school?
+Blake: Since we've almost gone through the application.
+
+-> sure.
+    You: sure.
+-> okay.
+    You: okay.
+
+<<jump Blake_PostSchool>>
+===
+
+title: Blake_PostSchool
+---
+<<set_background "Street">>
+
+Blake: Why did you break up with your ex?
+
+-> she ghosted me for 2 weeks.
+    You: she ghosted me for 2 weeks.
+-> she didn't even care about me.
+    You: she didn't even care about me.
+-> The only reason I was with her is because she goes to USC.
+    You: The only reason I was with her is because she goes to USC.
+    <<set $arbiter += 3>>
+
+Blake: I'm sorry. But she doesn't deserve you.
+
+-> I know.
+    You: I know.
+    <<set $arbiter += 1>>
+-> It's fine.
+    You: It's fine.
+
+Blake: I want to go to USC as well.
+
+-> who wouldn't.
+    You: who wouldn't.
+-> you will get in.
+    You: you will get in.
+
+Blake: I wish we can go to USC together.
+Blake: But I feel like my parents are always trying to manipulate me, and I really want to get away from them.
+
+-> omg
+    You: omg
+-> are you okay? Do you want to talk about this?
+    You: are you okay? Do you want to talk about this?
+    <<set $martyr += 2>>
+
+Blake: I'm getting used to it. Sometimes they don't even give me money.
+
+-> Let me treat you to dinner.
+    You: Let me treat you to dinner.
+    <<set $martyr += 2>>
+-> Let's go out for dinner.
+    You: Let's go out for dinner.
+
+<<jump Blake_Dinner>>
+===
+
+title: Blake_Dinner
+---
+<<set_background "Restaurant">>
+Narration: <i>The dinner is so good.</i>
+
+Blake: Did anyone tell you that you're cute?
+
+-> (No words. My face starts blushing.)
+    Narration: <i>No words. My face starts blushing.</i>
+-> You're pretty.
+    You: You're pretty.
+
+Blake: I kinda want to kiss you.
+
+Narration: <i>There's a strange vibe between Blake and me. She kisses me.</i>
+Narration: <i>We are together now. I do appreciate her and care about her.</i>
+
+Blake: I've been crushing on you for a long time, but you were with your ex.
+Blake: I think my mental state is actually terrible because of my family.
+
+-> I'm always here for you.
+    You: I'm always here for you.
+    <<set $martyr += 2>>
+-> What happened?
+    You: What happened?
+
+Blake: My mom keeps insulting me that I won't be able to get into a great school. My dad is just doing nothing with this.
+Blake: I don't even wanna go home.
+
+-> You can stay in my house.
+    You: You can stay in my house.
+    <<set $martyr += 3>>
+-> How can they treat you like that?
+    You: How can they treat you like that?
+    <<set $martyr += 1>>
+-> But you still need to deal with them.
+    You: But you still need to deal with them.
+
+Blake: I don't know what I'd do without you.
+Blake: I was completely broken, but you're slowly putting me back together.
+
+-> I don't know how to fix you. But I'm not going anywhere.
+    You: I don't know how to fix you. But I'm not going anywhere.
+    <<set $martyr += 3>>
+-> Blake... I care about you. But I don't want to be the only thing holding you together.
+    You: Blake... I care about you. But I don't want to be the only thing holding you together.
+
+<<jump Blake_Admission_Result>>
+===
+
+title: Blake_Admission_Result
+---
+<<set_background "School">>
+Narration: <i>I really like her. I think she might be the one.</i>
+Narration: <i>After a few weeks, the university has released the admission results.</i>
+Narration: <i>I get into USC. She doesn't reply to my message for the whole day.</i>
+
+Blake: I didn't get in.
+Blake: Am I really that bad?
+
+-> No! College admissions results can't define who you are.
+    You: No! College admissions results can't define who you are.
+    <<set $martyr += 2>>
+-> It doesn't change anything between us.
+    You: It doesn't change anything between us.
+    <<set $martyr += 1>>
+
+Blake: Am I really that worthless?
+Blake: My mom said something again.
+
+-> No you're not. Just leave her alone.
+    You: No you're not. Just leave her alone.
+    <<set $arbiter += 1>>
+-> Of course not! Talk to me, I'm here for you.
+    You: Of course not! Talk to me, I'm here for you.
+    <<set $martyr += 2>>
+
+Blake: Are you able to go out tonight?
+
+-> I'm here.
+    You: I'm here.
+    <<set $martyr += 2>>
+-> I'm kinda busy these days.
+    You: I'm kinda busy these days.
+
+<<jump Blake_Break_Up>>
+===
+
+title: Blake_Break_Up
+---
+<<set_background "Street">>
+Narration: <i>Few weeks later, I feel like she's draining all my energy.</i>
+Narration: <i>I don't have much to say to her. She's so stubborn about the school.</i>
+
+Blake: Did I say something wrong?
+
+-> No.
+    You: No.
+-> I'm just tired.
+    You: I'm just tired.
+-> ...
+    You: ...
+
+Blake: Be honest with me.
+Blake: Do you still like me?
+
+-> I care about you.
+    You: I care about you.
+-> ...not like before.
+    You: ...not like before.
+
+Blake: It's fine.
+Blake: People like you always move on.
+
+-> what do you mean people like me?
+    You: what do you mean people like me?
+
+Blake: People who get into USC.
+Blake: You look down on me.
+
+-> I never look down on anyone. But I can't do this anymore.
+    You: I never look down on anyone. But I can't do this anymore.
+
+Blake: So this is it.
+Blake: I guess I should've known.
+<<hide_character "Blake">>
+===

@@ -1,0 +1,38 @@
+﻿title: MaskDemo
+---
+<<declare $top = "">>
+<<if $simp >= $arbiter and $simp >= $martyr>>
+    <<set $top = "simp">>
+<<elseif $arbiter >= $simp and $arbiter >= $martyr>>
+    <<set $top = "arbiter">>
+<<else>>
+    <<set $top = "martyr">>
+<<endif>>
+
+-> [Simp] Be extra sweet
+    <<if $top != "simp">>
+        Narration: (Locked — needs highest Simp)
+        <<jump MaskDemo>>
+    <<endif>>
+    Narration: You chose the Simp path.
+    <<jump MaskDemo_End>>
+-> [Arbiter] Lay down the rules
+    <<if $top != "arbiter">>
+        Narration: (Locked — needs highest Arbiter)
+        <<jump MaskDemo>>
+    <<endif>>
+    Narration: You chose the Arbiter path.
+    <<jump MaskDemo_End>>
+-> [Martyr] Self-sacrifice
+    <<if $top != "martyr">>
+        Narration: (Locked — needs highest Martyr)
+        <<jump MaskDemo>>
+    <<endif>>
+    Narration: You chose the Martyr path.
+    <<jump MaskDemo_End>>
+===
+
+title: MaskDemo_End
+---
+Narration: Demo complete. Change mask values and try again.
+===
