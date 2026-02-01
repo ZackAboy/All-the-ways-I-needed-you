@@ -1,0 +1,136 @@
+﻿title: LevelTwoDia
+---
+
+Sylvia: So you really love USC?
+Sylvia: I heard from Annie.
+Sylvia: Good luck with your high school senior year.
+
+-> Thank you.
+
+Sylvia: Just text me if you have any questions or concerns!
+
+She shows a great interest in me somehow.
+We hung out several times.
+She gives me suggestions about college applications.
+We have the same music taste.
+She's a sweet girl.
+
+Sylvia: I've thought about telling you this lately.
+Sylvia: I have a crush on you.
+Sylvia: But I don't want you to feel overwhelmed.
+
+-> Really?
+-> I have a feeling for you too, but things are moving too fast.
+-> I'm not ready for another relationship.
+    <<set $simp += 1>>
+
+Sylvia: I think we get along pretty well.
+Sylvia: Can we try to be together?
+
+-> We only know each other for 2 weeks.
+
+Sylvia: I can help you with your college application essay.
+Sylvia: I know how hard you're trying to get into USC, 
+Sylvia: and I've been through the whole process. 
+Sylvia: I know how tough it is, so let me help you.
+
+-> I also think we're a great match, so let's be together.
+    <<set $arbiter += 5>>
+-> Thank you, but I'm not ready for another relationship.
+    <<jump Level3_Blake_Start>>
+
+<<jump Sylvia_LongDistance>>
+
+===
+
+title: Sylvia_LongDistance
+---
+
+After four months.
+We are in a long-distance relationship.
+
+Sylvia: Babe, I went to Iceland with my friends!
+Sylvia: We saw the Aurora.
+Sylvia: We should come together.
+
+-> Are you able to check my Common App Essay?
+    <<set $arbiter += 5>>
+    <<jump Sylvia_Essay>>
+-> Wow, it's so pretty.
+    <<jump Sylvia_Aurora>>
+
+===
+title: Sylvia_Aurora
+---
+
+Sylvia: Yeah I know right?
+Sylvia: It's my first time seeing Aurora.
+
+-> Are you able to check my Common App Essay?
+    <<set $arbiter += 3>>
+    <<jump Sylvia_Essay>>
+-> I'm struggling with my Common App Essay right now.
+    <<set $arbiter += 1>>
+    <<jump Sylvia_Essay>>
+
+===
+
+title: Sylvia_Essay
+---
+
+Sylvia: Babe... I have a due within three days.
+
+-> Then why did you go on a trip instead of doing your work?
+    <<set $arbiter += 3>>
+-> But I need to submit it tomorrow. Could you please help me with it?
+    <<set $arbiter += 1>>
+
+Sylvia: You're such a bummer.
+Sylvia: I'll try to review it if I have time.
+
+-> Am I the bummer now? You promised this when we got together.
+    <<set $arbiter += 3>>
+-> Thank you babe. I appreciate that.
+
+<<jump Sylvia_Ghosting>>
+
+===
+
+title: Sylvia_Ghosting
+---
+She sent her review and comment on my personal statement, but honestly I don't think it's really helpful.
+She's kinda brushing me off.
+-> Hey.
+-> I missed you.
+-> can we facetime?
+ 
+Sylvia I'm really busy with my final, it's stressing me out.
+Sylvia I can't always be online these few days.
+-> But I'm also stressed out because of my application. //+1 Arbiter
+-> Ok I won't annoy you these few days.
+-> Good luck for your final.
+
+She hasn't talked to me for two weeks.
+She doesn't reply to my messages.
+But she comments on other guy's Instagram posts.
+What the hell?
+
+-> What do you mean?
+-> you got the time to scroll your social media and comment on other guys but you don't have the time to talk with me?
+-> If this isn't working, THEN WE SHOULD BREAK UP.
+    <<set $arbiter += 3>>
+
+Sylvia: Honestly maybe we should take a break.
+Sylvia: I don't feel the same way anymore.
+
+-> Wait what? Are you serious right now?
+-> You ghosted me for two weeks and now this?
+-> What the fuck is wrong with you?
+
+Sylvia: I can't see a future between us.
+Sylvia: It's best we end here.
+
+<<jump Level3_Blake_Start>>
+
+===
+
