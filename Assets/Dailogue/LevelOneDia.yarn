@@ -64,11 +64,8 @@ Narration: <i>I want to say so much to her, but nothing feels enough.</i>
 
 title: Kai_Reunion
 ---
-<i>I remember what her typing rhythm feels like.</i>
-<i>My fingers hover over the keyboard.</i>
-<i>I want to say so much to her, but nothing feels enough.</i>
-<<show_character "Kai">>
 We met by the sea.
+<<show_character "Kai">>
 She has changed a lot since the last time I saw her,
 yet nothing has changed.
 Kai: I miss you.
