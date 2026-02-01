@@ -64,7 +64,7 @@ Narration: <i>I want to say so much to her, but nothing feels enough.</i>
 
 title: Kai_Reunion
 ---
-We met by the sea.
+We meet by the sea.
 <<show_character "Kai">>
 She has changed a lot since the last time I saw her,
 yet nothing has changed.
@@ -97,6 +97,7 @@ Kai: Can we... be together, even if just for a short while?
 
 title: Kai_Early_End
 ---
+<<hide_character "Kai">>
 I shouldn't say no to Kai.
 But I did.
 She's the only one that I ve ever loved.
@@ -105,7 +106,7 @@ She's the only one that I ve ever loved.
 
 title: Kai_Two_Weeks
 ---
-
+<<set_background "Street">>
 Two weeks later.
 
 Kai: I'm sorry, but I can't do this anymore.
@@ -145,10 +146,10 @@ Kai: I'm sorry.
 
 title: Level2_Annie_Intro
 ---
-
+<<set_background "School">>
 I can't believe Kai is gone.
 I thought we were something special.
-
+<<show_character "Annie">>
 Annie: What happened to you lately?
 
 -> I was dumped by the girl I liked for 4 years.
