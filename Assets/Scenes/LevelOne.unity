@@ -989,7 +989,7 @@ MonoBehaviour:
   - key: Street
     sprite: {fileID: -692078636420456154, guid: a49dc13ba7a93374db95b914dc09c113, type: 3}
   - key: School
-    sprite: {fileID: 8332362587983106067, guid: 994316905a578e441b1bb3b426b0bf64, type: 3}
+    sprite: {fileID: -2904102046858455655, guid: 3935bcd99c72bb14a854ea5ec9fb7bb2, type: 3}
   useCrossfade: 1
   fadeDuration: 0.5
   dialogueRunner: {fileID: 0}
