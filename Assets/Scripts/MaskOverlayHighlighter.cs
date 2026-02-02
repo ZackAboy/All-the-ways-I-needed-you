@@ -29,7 +29,7 @@ public class MaskOverlayHighlighter : MonoBehaviour
     public float highlightDuration = 1.0f;
     public Vector2 outlineDistance = new Vector2(3f, 3f);
 
-    private InMemoryVariableStorage storage;
+    private VariableStorageBehaviour storage;
 
     void Awake()
     {
@@ -44,6 +44,12 @@ public class MaskOverlayHighlighter : MonoBehaviour
 
     void Update()
     {
+        // Storage can be swapped at runtime by YarnSceneLoader; re-fetch if needed.
+        if (dialogueRunner != null && dialogueRunner.VariableStorage != storage)
+        {
+            storage = dialogueRunner.VariableStorage;
+        }
+
         if (storage == null)
             return;
 
@@ -92,14 +98,13 @@ public class MaskOverlayHighlighter : MonoBehaviour
 
     private void EnsureStorage()
     {
-        if (dialogueRunner != null && dialogueRunner.VariableStorage is InMemoryVariableStorage mem)
+        if (dialogueRunner != null)
         {
-            storage = mem;
+            storage = dialogueRunner.VariableStorage;
+            return;
         }
-        else
-        {
-            storage = FindObjectOfType<InMemoryVariableStorage>();
-        }
+
+        storage = FindObjectOfType<VariableStorageBehaviour>();
     }
 
     private void SetupSlots()

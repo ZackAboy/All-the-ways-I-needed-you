@@ -6,6 +6,7 @@ Sylvia: I heard from Annie.
 Sylvia: Good luck with your high school senior year.
 
 -> Thank you.
+    You: Thank you.
 
 Sylvia: Just text me if you have any questions or concerns!
 
@@ -20,16 +21,20 @@ Sylvia: I have a crush on you.
 Sylvia: But I don't want you to feel overwhelmed.
 
 -> Really?
+    You: Really?
     <<set $simp += 1>>
 -> I have a feelings for you too, but things are moving too fast.
+    You: I have a feelings for you too, but things are moving too fast.
     <<set $arbiter += 1>>
 -> I'm not ready for another relationship.
+    You: I'm not ready for another relationship.
     <<set $arbiter += 1>>
 
 Sylvia: I think we get along pretty well.
 Sylvia: Can we try to be together?
 
 -> We have only known each other for 2 weeks.
+    You: We have only known each other for 2 weeks.
 
 Sylvia: I can help you with your college applications.
 Sylvia: I know how hard you're trying to get into USC, 
@@ -37,8 +42,10 @@ Sylvia: and I've been through the whole process.
 Sylvia: I know how tough it is, so let me help you.
 
 -> I also think we're a great match, so let's be together.
+    You: I also think we're a great match, so let's be together.
     <<set $arbiter += 1>>
 -> Thank you, but I'm not ready for another relationship.
+    You: Thank you, but I'm not ready for another relationship.
     <<jump Level3_Blake_Start>>
 
 <<hide_character "Sylvia">>
@@ -117,9 +124,11 @@ Narration: <i>She's kinda brushing me off.</i>
 -> Hey.
     You: Hey.
 -> I missed you.
+    You: I missed you.
   <<set $simp += 1>>
     You: I missed you.
 -> can we facetime?
+    You: can we facetime?
  <<set $simp += 1>>
     You: can we facetime?
 

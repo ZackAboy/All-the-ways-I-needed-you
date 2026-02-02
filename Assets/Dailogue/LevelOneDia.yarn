@@ -70,8 +70,10 @@ She has changed a lot since the last time I saw her,
 yet nothing has changed.
 Kai: I miss you.
 -> Yeah, it's been a while.
+    You: Yeah, it's been a while.
     <<show_character "Kai">>
 -> I've missed you too.
+    You: I've missed you too.
     <<set $simp += 3>>
     <<hide_character "Kai">>
     <<show_character "KaiHappy">>
@@ -82,13 +84,16 @@ title: Kai_Confession
 ---
 Kai: Do you still like me?
 -> I've always liked you.
+    You: I've always liked you.
     <<set $simp += 1>>
     <<hide_character "Kai">>
     <<show_character "KaiHappy">>
 -> Yeah, but as a friend.
+    You: Yeah, but as a friend.
     <<hide_character "Kai">>
     <<show_character "KaiSad">>
 -> It's kinda weird.
+    You: It's kinda weird.
     <<set $arbiter += 1>>
     <<hide_character "Kai">>
     <<show_character "KaiSad">>
@@ -96,14 +101,17 @@ Kai: Do you still like me?
 Kai: Can we... be together, even if just for a short while?
 
 -> ...Let's see where this goes.
+    You: ...Let's see where this goes.
     <<set $arbiter += 1>>
     <<hide_character "Kai">>
     <<show_character "KaiHappy">>
 -> I don't think I can do this again.
+    You: I don't think I can do this again.
     <<hide_character "Kai">>
     <<show_character "KaiSad">>
     <<jump Kai_Early_End>>
 -> Do you know how many times I have dreamed about this moment?
+    You: Do you know how many times I have dreamed about this moment?
     <<set $simp += 2>>
     <<hide_character "Kai">>
     <<show_character "KaiHappy">>
@@ -133,8 +141,11 @@ Two weeks later.
 Kai: I'm sorry, but I can't do this anymore.
 
 -> Why?
+    You: Why?
 -> What happened?
+    You: What happened?
 -> What's wrong with you?
+    You: What's wrong with you?
     <<set $arbiter += 3>>
 
 Kai: I care about you...
@@ -142,20 +153,26 @@ Kai: And I'll always love you.
 Kai: You're special for me.
 
 -> You're really special for me too.
+    You: You're really special for me too.
     <<set $simp += 3>>
 -> No reply.
+    You: No reply.
     <<set $martyr += 1>>
 -> I have never stopped loving you.
+    You: I have never stopped loving you.
     <<set $simp += 5>>
 
 Kai: But I can't get over my ex.
 Kai: I know I'm such a shitty person.
 Kai: You deserve better.
 -> Why can't we just enjoy being together now, and leave it until you leave?
+    You: Why can't we just enjoy being together now, and leave it until you leave?
     <<set $simp += 1>>
 -> I don't care, I just want to be with you now.
+    You: I don't care, I just want to be with you now.
     <<set $simp += 3>>
 -> I'm done with you.
+    You: I'm done with you.
     <<set $arbiter += 3>>
 
 Kai: I'm sorry.
@@ -175,8 +192,11 @@ I thought we were something special.
 Annie: What happened to you lately?
 
 -> I was dumped by the girl I liked for 4 years.
+    You: I was dumped by the girl I liked for 4 years.
 -> Just another shit-ass relationship.
+    You: Just another shit-ass relationship.
 -> I'm fine.
+    You: I'm fine.
     Annie: Just text me if you need to talk.
     <<jump Level3_Blake_Start>>
 
@@ -185,7 +205,9 @@ Annie: She's in your dream school.
 Annie: Maybe you should start focusing on your college application season.
 
 -> Yeah you're right.
+    You: Yeah you're right.
 -> Yeah I've always wanted to meet her.
+    You: Yeah I've always wanted to meet her.
     <<set $arbiter += 1>>
 
 <<jump Sylvia_Intro>>
