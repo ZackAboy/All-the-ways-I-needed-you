@@ -7,6 +7,7 @@ title: LevelFour_Start
 ---
 <<hide_character "Kai">>
 <<hide_character "Annie">>
+<<hide_character "AnnieSad">>
 <<set_background "Street">>
 Narration: <i>Three months later, I'm in LA for university. Kai lives here.</i>
 Narration: <i>The thought of it sits with me in a strange way—like we still have a chance after all these years?</i>
@@ -91,8 +92,9 @@ Kai: I know there are some problems with me, so the best thing I can do is push 
 Narration: <i>I left my city for LA. She takes a flight at LAX to New York City.</i>
 <<hide_character "Kai">>
 <<hide_character "Annie">>
+<<hide_character "AnnieSad">>
 <<set_background "Street">>
-<<show_character "Annie">>
+<<show_character "AnnieSad">>
 
 Annie: What happened?
 Annie: Suddenly you just stopped talking to me.
@@ -112,6 +114,7 @@ title: Mask_Select
 ---
 <<hide_character "Kai">>
 <<hide_character "Annie">>
+<<hide_character "AnnieSad">>
 <<set_background "Street">>
 <<show_character "Annie">>
 <<declare $mask_top = "">>
@@ -149,7 +152,8 @@ title: Mask_Select
 title: Arbiter_Path
 ---
 <<hide_character "Annie">>
-<<show_character "Annie">>
+<<hide_character "AnnieSad">>
+<<show_character "AnnieSad">>
 Annie: Then can we be together officially?
 
 -> I'm sorry, I can't do this anymore.
@@ -170,6 +174,7 @@ Annie: I don't know you anymore.
     You: I'm sorry.
 
 Narration: <i>End game.</i>
+<<hide_character "AnnieSad">>
 <<hide_character "Annie">>
 <<stop>>
 ===
@@ -177,7 +182,8 @@ Narration: <i>End game.</i>
 title: Simp_Path
 ---
 <<hide_character "Annie">>
-<<show_character "Annie">>
+<<hide_character "AnnieSad">>
+<<show_character "AnnieSad">>
 Annie: You've never liked me, have you?
 Annie: I thought we were something.
 
@@ -199,6 +205,7 @@ Annie: Of course. You two are perfect for each other.
     You: ...
 
 Narration: <i>End game.</i>
+<<hide_character "AnnieSad">>
 <<hide_character "Annie">>
 <<stop>>
 ===
@@ -206,6 +213,7 @@ Narration: <i>End game.</i>
 title: Martyr_Path
 ---
 <<hide_character "Annie">>
+<<hide_character "AnnieSad">>
 <<show_character "Annie">>
 Annie: Can we be together officially?
 Annie: I think we get along with each other so well.
@@ -230,6 +238,7 @@ Annie: Do you know how many times I have dreamed about this moment?
     You: I will fly to your place next month.
 
 Narration: <i>End game.</i>
+<<hide_character "AnnieSad">>
 <<hide_character "Annie">>
 <<stop>>
 ===
