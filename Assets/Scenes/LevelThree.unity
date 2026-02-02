@@ -797,7 +797,7 @@ MonoBehaviour:
   backgroundImage: {fileID: 1236886663}
   backgrounds:
   - key: Street
-    sprite: {fileID: -692078636420456154, guid: a49dc13ba7a93374db95b914dc09c113, type: 3}
+    sprite: {fileID: -8444183744122859209, guid: 934cdc85d33e6054f8832fccbfbfbf70, type: 3}
   - key: School
     sprite: {fileID: -2904102046858455655, guid: 3935bcd99c72bb14a854ea5ec9fb7bb2, type: 3}
   - key: Restaurant
