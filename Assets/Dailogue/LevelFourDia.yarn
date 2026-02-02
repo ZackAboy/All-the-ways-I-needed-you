@@ -1,0 +1,235 @@
+title: LevelFourDia
+---
+<<jump LevelFour_Start>>
+===
+
+title: LevelFour_Start
+---
+<<hide_character "Kai">>
+<<hide_character "Annie">>
+<<set_background "Street">>
+Narration: <i>Three months later, I'm in LA for university. Kai lives here.</i>
+Narration: <i>The thought of it sits with me in a strange way—like we still have a chance after all these years?</i>
+Narration: <i>Annie comes to visit me from her city.</i>
+<<show_character "Annie">>
+
+Annie: Are you okay? I heard that you broke up with Blake?
+Annie: I thought y'all were good together.
+
+-> It's not like that. She's draining me.
+    You: It's not like that. She's draining me.
+-> I'm fine.
+    You: I'm fine.
+
+Annie: I'm really sorry for you, all the things that you've been through.
+
+-> I appreciate that.
+    You: I appreciate that.
+-> Thank you for always being there.
+    You: Thank you for always being there.
+
+Annie: I just wanna let you know that I always have feelings for you.
+Annie: But whenever we get a chance, you're always thinking about your ex, especially Kai.
+Annie: To be honest she's the toxicest one.
+
+-> I thought we were friends?
+    You: I thought we were friends?
+-> Why are you saying this to me?
+    You: Why are you saying this to me?
+-> It's none of your business.
+    You: It's none of your business.
+
+Annie: I just want you to be happy. You're getting hurt.
+
+Narration: <i>We have a good time together in LA. She's sweet, but I don't think I'm capable of liking someone the way I used to.</i>
+Narration: <i>I don't know how to handle what's growing between Annie and me.</i>
+
+<<hide_character "Annie">>
+<<hide_character "Kai">>
+<<set_background "Beach">>
+<<show_character "Kai">>
+Kai: How've you been?
+
+-> I'm not doing so well.
+    You: I'm not doing so well.
+
+Kai: Do you like LA so far?
+
+-> Kinda.
+    You: Kinda.
+-> I enjoy the vibe.
+    You: I enjoy the vibe.
+-> I'm glad that you're here.
+    You: I'm glad that you're here.
+
+Kai: Well, I'm here to say goodbye.
+
+-> What?
+    You: What?
+-> Why?
+    You: Why?
+
+Kai: I broke up with my ex over half a year ago, and I don't think I've really recovered from it.
+Kai: I've been pretty overwhelmed.
+Kai: I met a really sweet guy in New York—he treats me very well—but I'm not sure if I actually like him.
+
+-> uh good luck.
+    You: uh good luck.
+    <<jump Mask_Select>>
+-> I was never your choice.
+    You: I was never your choice.
+-> For at least one time, why couldn't you just choose me?
+    You: For at least one time, why couldn't you just choose me?
+
+Kai: I do love you and care about you.
+Kai: But I'm gonna hurt you again if I be with you.
+Kai: I know there are some problems with me, so the best thing I can do is push you away from me.
+
+-> ...
+    You: ...
+
+Narration: <i>I left my city for LA. She takes a flight at LAX to New York City.</i>
+<<hide_character "Kai">>
+<<hide_character "Annie">>
+<<set_background "Street">>
+<<show_character "Annie">>
+
+Annie: What happened?
+Annie: Suddenly you just stopped talking to me.
+
+-> I'm sorry.
+    You: I'm sorry.
+-> I ain't in the mood.
+    You: I ain't in the mood.
+
+Annie: What do you think about flying to my place next month?
+Annie: There are some vacations.
+
+<<jump Mask_Select>>
+===
+
+title: Mask_Select
+---
+<<hide_character "Kai">>
+<<hide_character "Annie">>
+<<set_background "Street">>
+<<show_character "Annie">>
+<<declare $mask_top = "">>
+<<if $simp >= $arbiter and $simp >= $martyr>>
+    <<set $mask_top = "simp">>
+<<elseif $arbiter >= $simp and $arbiter >= $martyr>>
+    <<set $mask_top = "arbiter">>
+<<else>>
+    <<set $mask_top = "martyr">>
+<<endif>>
+
+-> [Arbiter] I think our relationship is not serious enough for me to fly there.
+    <<if $mask_top != "arbiter">>
+        Narration: (Locked — needs highest Arbiter)
+        <<jump Mask_Select>>
+    <<endif>>
+    You: I think our relationship is not serious enough for me to fly there.
+    <<jump Arbiter_Path>>
+-> [Simp] I met Kai the last few days. I think I still can't get over her.
+    <<if $mask_top != "simp">>
+        Narration: (Locked — needs highest Simp)
+        <<jump Mask_Select>>
+    <<endif>>
+    You: I met Kai the last few days. I think I still can't get over her.
+    <<jump Simp_Path>>
+-> [Martyr] emmm, I'll think about it.
+    <<if $mask_top != "martyr">>
+        Narration: (Locked — needs highest Martyr)
+        <<jump Mask_Select>>
+    <<endif>>
+    You: emmm, I'll think about it.
+    <<jump Martyr_Path>>
+===
+
+title: Arbiter_Path
+---
+<<hide_character "Annie">>
+<<show_character "Annie">>
+Annie: Then can we be together officially?
+
+-> I'm sorry, I can't do this anymore.
+    You: I'm sorry, I can't do this anymore.
+-> I don't think so. I need to focus on my college life right now.
+    You: I don't think so. I need to focus on my college life right now.
+-> I guess we can try.
+    You: I guess we can try.
+
+Annie: You're acting like Sylvia right now.
+Annie: I don't know you anymore.
+
+-> ...
+    You: ...
+-> I guess so.
+    You: I guess so.
+-> I'm sorry.
+    You: I'm sorry.
+
+Narration: <i>End game.</i>
+<<hide_character "Annie">>
+<<stop>>
+===
+
+title: Simp_Path
+---
+<<hide_character "Annie">>
+<<show_character "Annie">>
+Annie: You've never liked me, have you?
+Annie: I thought we were something.
+
+-> We were. But deep down in my heart, I still love her.
+    You: We were. But deep down in my heart, I still love her.
+-> I'm sorry. I didn't mean to let you down.
+    You: I'm sorry. I didn't mean to let you down.
+-> I don't have time for this.
+    You: I don't have time for this.
+
+Annie: I never should've fallen for you.
+Annie: Of course. You two are perfect for each other.
+
+-> Goodbye.
+    You: Goodbye.
+-> Thank you?
+    You: Thank you?
+-> ...
+    You: ...
+
+Narration: <i>End game.</i>
+<<hide_character "Annie">>
+<<stop>>
+===
+
+title: Martyr_Path
+---
+<<hide_character "Annie">>
+<<show_character "Annie">>
+Annie: Can we be together officially?
+Annie: I think we get along with each other so well.
+Annie: I really had a good time with you in LA.
+
+-> I can't do this anymore.
+    You: I can't do this anymore.
+-> Yeah, we had a good time together.
+    You: Yeah, we had a good time together.
+-> I'm sorry.
+    You: I'm sorry.
+
+Annie: I'm so happy.
+Annie: Finally we get together.
+Annie: Do you know how many times I have dreamed about this moment?
+
+-> Yeah, me too.
+    You: Yeah, me too.
+-> ...
+    You: ...
+-> I will fly to your place next month.
+    You: I will fly to your place next month.
+
+Narration: <i>End game.</i>
+<<hide_character "Annie">>
+<<stop>>
+===
