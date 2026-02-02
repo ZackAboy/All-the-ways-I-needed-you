@@ -751,7 +751,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7247908186547362750, guid: d970e6e278d11ae49b66640edfa47b00, type: 3}
+  m_Sprite: {fileID: -3206198842441005096, guid: de95b0468ca494e4c8f648fd6c8dadd9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -801,7 +801,7 @@ MonoBehaviour:
   - key: School
     sprite: {fileID: -2904102046858455655, guid: 3935bcd99c72bb14a854ea5ec9fb7bb2, type: 3}
   - key: Restaurant
-    sprite: {fileID: -7247908186547362750, guid: d970e6e278d11ae49b66640edfa47b00, type: 3}
+    sprite: {fileID: -3206198842441005096, guid: de95b0468ca494e4c8f648fd6c8dadd9, type: 3}
   useCrossfade: 1
   fadeDuration: 0.5
   dialogueRunner: {fileID: 165833744}

@@ -1078,7 +1078,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5625728230070624209, guid: caef8e8f98441ab4b8d4c8f00a487d45, type: 3}
+  m_Sprite: {fileID: -7417275667389229624, guid: 15b70d105ef889a4080583c931f6a272, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1111,7 +1111,7 @@ MonoBehaviour:
   backgroundImage: {fileID: 1236886663}
   backgrounds:
   - key: Street
-    sprite: {fileID: -692078636420456154, guid: a49dc13ba7a93374db95b914dc09c113, type: 3}
+    sprite: {fileID: -5388035845342605213, guid: 99b035509387b6c4a91aabc7638ada64, type: 3}
   - key: School
     sprite: {fileID: -2904102046858455655, guid: 3935bcd99c72bb14a854ea5ec9fb7bb2, type: 3}
   useCrossfade: 1
