@@ -163,13 +163,13 @@ Blake: But I feel like my parents are always trying to manipulate me, and I real
     You: omg
 -> are you okay? Do you want to talk about this?
     You: are you okay? Do you want to talk about this?
-    <<set $martyr += 2>>
+    <<set $martyr += 3>>
 
 Blake: I'm getting used to it. Sometimes they don't even give me money.
 
 -> Let me treat you to dinner.
     You: Let me treat you to dinner.
-    <<set $martyr += 2>>
+    <<set $martyr += 3>>
 -> Let's go out for dinner.
     You: Let's go out for dinner.
 
@@ -188,8 +188,10 @@ Blake: Did anyone tell you that you're cute?
 
 -> (No words. My face starts blushing.)
     Narration: <i>No words. My face starts blushing.</i>
+    <<set $simp += 1>>
 -> You're pretty.
     You: You're pretty.
+    <<set $simp += 2>>
 
 Blake: I kinda want to kiss you.
 
@@ -260,13 +262,13 @@ Blake: My mom said something again.
     <<set $arbiter += 1>>
 -> Of course not! Talk to me, I'm here for you.
     You: Of course not! Talk to me, I'm here for you.
-    <<set $martyr += 2>>
+    <<set $martyr += 3>>
 
 Blake: Are you able to go out tonight?
 
 -> I'm here.
     You: I'm here.
-    <<set $martyr += 2>>
+    <<set $martyr += 3>>
 -> I'm kinda busy these days.
     You: I'm kinda busy these days.
 
@@ -296,6 +298,7 @@ Blake: Do you still like me?
 
 -> I care about you.
     You: I care about you.
+    <<set $martyr += 1>>
 -> ...not like before.
     You: ...not like before.
 

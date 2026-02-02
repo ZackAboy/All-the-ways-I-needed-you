@@ -142,7 +142,7 @@ Kai: You're special for me.
 -> You're really special for me too.
     <<set $simp += 3>>
 -> No reply.
-    <<set $arbiter += 1>>
+    <<set $martyr += 1>>
 -> I have never stopped loving you.
     <<set $simp += 5>>
 

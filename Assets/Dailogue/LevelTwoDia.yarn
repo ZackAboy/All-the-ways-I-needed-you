@@ -20,9 +20,11 @@ Sylvia: I have a crush on you.
 Sylvia: But I don't want you to feel overwhelmed.
 
 -> Really?
--> I have a feelings for you too, but things are moving too fast.
--> I'm not ready for another relationship.
     <<set $simp += 1>>
+-> I have a feelings for you too, but things are moving too fast.
+    <<set $arbiter += 1>>
+-> I'm not ready for another relationship.
+    <<set $arbiter += 1>>
 
 Sylvia: I think we get along pretty well.
 Sylvia: Can we try to be together?
@@ -35,7 +37,7 @@ Sylvia: and I've been through the whole process.
 Sylvia: I know how tough it is, so let me help you.
 
 -> I also think we're a great match, so let's be together.
-    <<set $arbiter += 5>>
+    <<set $arbiter += 1>>
 -> Thank you, but I'm not ready for another relationship.
     <<jump Level3_Blake_Start>>
 
@@ -57,10 +59,11 @@ Sylvia: We should come together.
 
 -> Are you able to check my Personal Statement?
     You: Are you able to check my Personal Statement?
-    <<set $arbiter += 5>>
+    <<set $arbiter += 1>>
     <<jump Sylvia_Essay>>
 -> Wow, it's so pretty.
     You: Wow, it's so pretty.
+    <<set $simp += 1>>
     <<jump Sylvia_Aurora>>
 
 ===
@@ -72,7 +75,7 @@ Sylvia: It's my first time seeing the Nothern Lights.
 
 -> Are you able to check my Personal Statement?
     You: Are you able to check my Personal Statement?
-    <<set $arbiter += 3>>
+    <<set $arbiter += 2>>
     <<jump Sylvia_Essay>>
 -> I'm struggling with my Personal Statement right now.
     You: I'm struggling with my Personal Statement right now.
@@ -88,7 +91,7 @@ Sylvia: Babe... I have an essay due within three days.
 
 -> Shouldn't have gone on a trip and prioritized your work
     You: Shouldn't have gone on a trip and prioritized your work
-    <<set $arbiter += 3>>
+    <<set $arbiter += 2>>
 -> But I need to submit it tomorrow. Could you please help me with it?
     You: But I need to submit it tomorrow. Could you please help me with it?
     <<set $arbiter += 1>>
@@ -98,9 +101,10 @@ Sylvia: I'll try to review it if I have time.
 
 -> Am I the bummer now? You promised this when we got together.
     You: Am I the bummer now? You promised this when we got together.
-    <<set $arbiter += 3>>
+    <<set $arbiter += 2>>
 -> Thank you babe. I appreciate that.
     You: Thank you babe. I appreciate that.
+    <<set $martyr += 1>>
 
 <<jump Sylvia_Ghosting>>
 
@@ -126,8 +130,10 @@ Sylvia: I can't always be online these few days.
     <<set $arbiter += 1>>
 -> Ok I won't annoy you these few days.
     You: Ok I won't annoy you these few days.
+    <<set $martyr += 1>>
 -> Good luck for your final.
     You: Good luck for your final.
+    <<set $martyr += 1>>
 
 Narration: <i>She hasn't talked to me for two weeks.</i>
 Narration: <i>She doesn't reply to my messages.</i>
@@ -139,7 +145,7 @@ Narration: <i>What the hell?</i>
 -> you got the time to scroll your social media and comment on other guys but you don't have the time to talk with me?
     You: you got the time to scroll your social media and comment on other guys but you don't have the time to talk with me?
 -> If this isn't working, THEN WE SHOULD BREAK UP.
-    <<set $arbiter += 3>>
+    <<set $arbiter += 2>>
     You: If this isn't working, THEN WE SHOULD BREAK UP.
 
 Sylvia: Honestly maybe we should take a break.

@@ -118,30 +118,32 @@ title: Mask_Select
 <<set_background "Street">>
 <<show_character "Annie">>
 <<declare $mask_top = "">>
-<<if $simp >= $arbiter and $simp >= $martyr>>
+<<if $simp > $arbiter and $simp > $martyr>>
     <<set $mask_top = "simp">>
-<<elseif $arbiter >= $simp and $arbiter >= $martyr>>
+<<elseif $arbiter > $simp and $arbiter > $martyr>>
     <<set $mask_top = "arbiter">>
-<<else>>
+<<elseif $martyr > $simp and $martyr > $arbiter>>
     <<set $mask_top = "martyr">>
+<<else>>
+    <<set $mask_top = "tie">>
 <<endif>>
 
 -> [Arbiter] I think our relationship is not serious enough for me to fly there.
-    <<if $mask_top != "arbiter">>
+    <<if $mask_top != "arbiter" and $mask_top != "tie">>
         Narration: (Locked — needs highest Arbiter)
         <<jump Mask_Select>>
     <<endif>>
     You: I think our relationship is not serious enough for me to fly there.
     <<jump Arbiter_Path>>
 -> [Simp] I met Kai the last few days. I think I still can't get over her.
-    <<if $mask_top != "simp">>
+    <<if $mask_top != "simp" and $mask_top != "tie">>
         Narration: (Locked — needs highest Simp)
         <<jump Mask_Select>>
     <<endif>>
     You: I met Kai the last few days. I think I still can't get over her.
     <<jump Simp_Path>>
 -> [Martyr] emmm, I'll think about it.
-    <<if $mask_top != "martyr">>
+    <<if $mask_top != "martyr" and $mask_top != "tie">>
         Narration: (Locked — needs highest Martyr)
         <<jump Mask_Select>>
     <<endif>>
