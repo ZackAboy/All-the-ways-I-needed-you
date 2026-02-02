@@ -176,6 +176,7 @@ Annie: I don't know you anymore.
 Narration: <i>End game.</i>
 <<hide_character "AnnieSad">>
 <<hide_character "Annie">>
+<<load_scene "Credit Menu" "">>
 <<stop>>
 ===
 
@@ -207,6 +208,7 @@ Annie: Of course. You two are perfect for each other.
 Narration: <i>End game.</i>
 <<hide_character "AnnieSad">>
 <<hide_character "Annie">>
+<<load_scene "Credit Menu" "">>
 <<stop>>
 ===
 
@@ -240,5 +242,6 @@ Annie: Do you know how many times I have dreamed about this moment?
 Narration: <i>End game.</i>
 <<hide_character "AnnieSad">>
 <<hide_character "Annie">>
+<<load_scene "Credit Menu" "">>
 <<stop>>
 ===

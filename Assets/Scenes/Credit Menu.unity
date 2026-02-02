@@ -216,7 +216,7 @@ RectTransform:
   - {fileID: 1351807760}
   - {fileID: 963199957}
   - {fileID: 718264202}
-  - {fileID: 1851660712}
+  - {fileID: 988973639}
   - {fileID: 1040335781}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -237,7 +237,7 @@ GameObject:
   - component: {fileID: 718264204}
   - component: {fileID: 718264203}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: ThanksForPlaying
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -506,7 +506,7 @@ GameObject:
   - component: {fileID: 988973641}
   - component: {fileID: 988973640}
   m_Layer: 5
-  m_Name: Text (TMP) (2)
+  m_Name: Sahil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -523,12 +523,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1040335781}
+  m_Children:
+  - {fileID: 1416365728}
+  m_Father: {fileID: 421063504}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 822, y: 0.000015259}
+  m_AnchoredPosition: {x: 609, y: 205.00002}
   m_SizeDelta: {x: 955.4033, y: 314.68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &988973640
@@ -643,7 +644,7 @@ GameObject:
   - component: {fileID: 1040335783}
   - component: {fileID: 1040335782}
   m_Layer: 5
-  m_Name: Text (TMP) (2)
+  m_Name: Skylar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -661,8 +662,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1416365728}
-  - {fileID: 988973639}
+  - {fileID: 1851660712}
   m_Father: {fileID: 421063504}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1065,7 +1065,7 @@ GameObject:
   - component: {fileID: 1416365730}
   - component: {fileID: 1416365729}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: SahilCreds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1083,11 +1083,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1040335781}
+  m_Father: {fileID: 988973639}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 822, y: -176}
+  m_AnchoredPosition: {x: -2.1640625, y: -240.92682}
   m_SizeDelta: {x: 955.4033, y: 314.68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1416365729
@@ -1113,6 +1113,10 @@ MonoBehaviour:
   m_text: 'programmer
 
     Level design
+
+    systems integration
+
+    debugging
 
 
 '
@@ -1264,7 +1268,7 @@ GameObject:
   - component: {fileID: 1851660714}
   - component: {fileID: 1851660713}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: SkylarCreds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1277,16 +1281,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851660711}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 421063504}
+  m_Father: {fileID: 1040335781}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -213, y: -6.340002}
+  m_AnchoredPosition: {x: 0, y: -211.34006}
   m_SizeDelta: {x: 955.4033, y: 314.68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1851660713
