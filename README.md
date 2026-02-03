@@ -1,3 +1,4 @@
+![Main Cast](pics/StartScreen.png)
 # Arcana of Want
 
 **Arcana of Want** is a short, narrative-driven dating-sim inspired game created for **USC Games Global Game Jam 2026**.
@@ -43,6 +44,8 @@ The illusion of freedom slowly gives way to emotional constraint.
 
 ## 🎭 The Three Masks
 
+![Mask](pics/Mask.png)
+
 Each Mask represents a belief the player unconsciously adopts through repeated behavior.
 
 ### ❤️ The Simp
@@ -73,21 +76,29 @@ Each Mask represents a belief the player unconsciously adopts through repeated b
 
 ## 👥 Characters
 
+![Kai](pics/Kai.png)
+
 ### Kai — *The Simp Route*
 - The person the player loves the most
 - Reappears throughout the game
 - Never fully commits, never fully leaves
 - Primary source of **Simp** points
 
+![Sylvia](pics/Sylvia.png)
+
 ### Sylvia — *The Arbiter Route*
 - Pragmatic, emotionally distant
 - Relationship feels calculated and conditional
 - Primary source of **Arbiter** points
 
+![Blake](pics/Blake.png)
+
 ### Blake — *The Martyr Route*
 - Vulnerable, emotionally dependent
 - Player becomes their emotional anchor
 - Primary source of **Martyr** points
+
+![Annie](pics/Annie.png)
 
 ### Annie — *The Mirror*
 - Starts as a supportive friend
@@ -99,11 +110,6 @@ Each Mask represents a belief the player unconsciously adopts through repeated b
 ---
 
 ## 📖 Narrative Structure
-
-### PhoneChat
-- Reconnection with Kai
-- Establishes emotional tone
-- Introduces early Mask bias
 
 ### Level One — Kai Arc
 - Short-lived emotional reunion
@@ -227,7 +233,9 @@ and reflect on how identity forms through repetition.
 ▶ **Gameplay Demo:**  
 https://youtu.be/V82LnK6Av2c
 
-*(Optional: embed GIFs or screenshots here)*
+![PhoneChat](pics/PhoneChat.png)
+
+![InGame](pics/InGame.png)
 
 ---
 
@@ -235,5 +243,5 @@ https://youtu.be/V82LnK6Av2c
 
 **Team 06 — USC Games Global Game Jam 2026**
 
-- Skylar (Yining) Deng  
-- Sahil Gujral  
+- [Skylar (Yining) Deng](https://github.com/ydeng053-ux0)
+- [Sahil Gujral](https://github.com/ZackAboy)
